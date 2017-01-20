@@ -29,7 +29,7 @@ body {
     color: #e33f0f;
 }
 
-#essay.world {
+#essay .world {
     color: #e33f0f;
 }
 
@@ -48,7 +48,7 @@ body {
     color: #00b16a;
 }
 
-#article .hate {
+#essay .hate {
     color: #00b16a;
 }
 
