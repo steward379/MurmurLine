@@ -25,7 +25,11 @@ body {
 
 /*好的*/
 
-#good_title,#essay.world {
+#good_title {
+    color: #e33f0f;
+}
+
+#essay.world {
     color: #e33f0f;
 }
 
@@ -40,7 +44,11 @@ body {
 
 /*不好的*/
 
-#bad_title, #article .hate {
+#bad_title{
+    color: #00b16a;
+}
+
+#article .hate {
     color: #00b16a;
 }
 
@@ -63,7 +71,11 @@ body {
 
 /*酷的*/
 
-#cool_title, #essay .happy {
+#cool_title {
+    color: #0066ff;
+}
+
+#essay .happy {
     color: #0066ff;
 }
 
