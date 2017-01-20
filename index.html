@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta property="og:url" content="https://steward379.github.io/MurmurLine/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta property="og:description" content="Your description" />
+    <meta property="og:image" content="https://steward379.github.io/MurmurLine/trash.jpg" />
     <!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css"> -->
     <!-- <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> -->
     <!-- <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script> -->
@@ -59,6 +63,8 @@
                     <li><a id="murmur" class="a" href="https://www.facebook.com/murmurline/"><button type="button" class="button round tiny">去廢話線</button></a></li>
                     <li><a id="source" class="a" href="https://cornguo.nlplab.tw/temp/mengmeng/"><button type="button" class="button success round tiny">源碼：萌萌產生器</button></a></li>
                     <li><a id="dont" class="a" href="https://www.facebook.com/aliceHkitchen/"><button type="button" class="button alert round tiny">半夜不要按</button></a></li>
+                    <li><button type="button" class="button secondary round tiny"><div class="fb-share-button" data-href="https://steward379.github.io/MurmurLine/" data-layout="box_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsteward379.github.io%2FMurmurLine%2F&amp;src=sdkpreparse"><a class="fi-social-facebook" href="https://www.facebook.com/murmurline/"></a>臉書分享</a></div>
+                    </button></li>
                 </ul>
             </div>
         </div>
@@ -82,7 +88,7 @@
                         <h3 class="fi-skull" id="bad_title"> Bad Stuff </h3>
                     </li>
                     <br/>
-                    <li class="ask">比喻很討厭 </br>ex.萌萌噠<input name="hate" value=""></input><br /></li>
+                    <li class="ask">比喻很討厭或反諷 </br>ex.萌萌噠<input name="hate" value=""></input><br /></li>
                     <li class="ask">形容很廢 </br>ex.魯魯der<input name="awful" value=""></input><br /></li>
                     <li class="ask">講句很蠢的事 </br>ex.摳腳垢<input name="stupid" value=""></input><br /></li>
                     <li class="ask">有點髒或白痴的動作 </br>ex.棒賽<input name="fxck" value=""></input><br /></li>
@@ -96,7 +102,7 @@
                     </li>
                     <br/>
                     <li class="ask">講個做了會很開心的事</br>ex.睡覺<input name="happy" value=""></input><br /></li>
-                    <li class="ask">很重要的部位 </br>富爸爸<input name="vital" value=""></input><br /></li>
+                    <li class="ask">很重要的部位或人 </br>ex.富爸爸<input name="vital" value=""></input><br /></li>
                     <li class="ask">講一位最好的朋友 </br>ex.披特・宿<input name="quote" value=""></input><br /></li>
                     <li class="ask">講句完成後會很屌的事 </br>ex.耍廢<input name="win" value=""></input><br/></li>
                 </ul>
@@ -107,7 +113,7 @@
                 <input id="submit" type="submit" value="廢話連篇" class="button warning expand round"></input>
             </div>
             <div data-alert id="success" class="alert-box success radius medium-4 columns" style="display:none;">
-                <strong>Success!</strong> This alert box indicates a successful or positive action.
+                <strong>成功了！</strong> 整個地球因為你，又產生了一句廢話。真是可喜可賀，認同請廣傳。
                 <a href="#" class="close">&times;</a>
             </div>
         </div>
@@ -119,7 +125,23 @@
                 class="organ"></span>業障重啊。反正，我很喜歡一句話，海水退潮了，就知道誰沒有<span class="vital"></span>。而且
             <span class="quote"></span>也說過，「<span class="win"></span>的基礎，必須建立在<span class="stupid"></span>上面。」我沈痛的呼籲大家，不要再<span class="happy"></span>了，潮魯der。認同請<span class="fxck"></span>。
         </div>
+        <button type="button" class="button secondary expand round">
+          <div class="fb-share-button" data-href="https://steward379.github.io/MurmurLine/" data-layout="box_count" data-size="large" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsteward379.github.io%2FMurmurLine%2F&amp;src=sdkpreparse">
+              <a class="fi-social-facebook" href="https://www.facebook.com/murmurline/">
+              </a>分享到 facebook</a>
+            </div>
+          </button>
     </div>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1582988938686904";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 
 </html>
