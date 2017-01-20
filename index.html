@@ -51,21 +51,22 @@
       </script>
       <script>
         function boom() {
-            var g1 = ["international", "可以上狂新聞", "海濤法師"];
-            var g2 = ["87賽亞人", "萌萌滴魯夫", "一拳抄人"];
-            var g3 = ["川普", "黑暗小英", "普丁"];
-            var g4 = ["拉低全台灣男生平均", "", "智障"];
-            var g5 = ["魯魯der", "素肚王子", "妖受讚"];
-            var g6 = ["聞腳趾", "舔鼻屎", "摳肚臍"];
-            var g7 = ["棒賽", "跳佛舞", "尻尻"];
-            var g8 = ["鼻毛", "腳毛", "尾骨"];
-            var g9 = ["睡覺", "吃", "耍廢"];
-            var g10 = ["尻子玉", "藍尾", "gg惹"];
-            var g11 = ["披特・宿", "晨曦", "史丹佛的 Paul"];
-            var g12 = ["連續三天沒便秘", "背出一百句靜思語", "連續睡 30 小時"];
-            for (i = 1; i < 13; i++) {
-                // var name = g + i
+          var g1 = ["international", "可以上狂新聞", "海濤法師"];
+          var g2 = ["87賽亞人", "萌萌滴魯夫", "一拳抄人"];
+          var g3 = ["川普", "黑暗小英", "普丁"];
+          var g4 = ["拉低全台灣男生平均", "9487", "真的很棒"];
+          var g5 = ["魯魯der", "素肚王子", "妖受讚"];
+          var g6 = ["聞腳趾", "舔鼻屎", "摳肚臍"];
+          var g7 = ["棒賽", "跳佛舞", "尻尻"];
+          var g8 = ["鼻毛", "腳毛", "尾骨"];
+          var g9 = ["睡覺", "吃", "耍廢"];
+          var g10 = ["尻子玉", "藍尾", "gg惹"];
+          var g11 = ["披特・宿", "晨曦", "史丹佛的 Paul"];
+          var g12 = ["連續三天沒便秘", "背出一百句靜思語", "連續睡 30 小時"];
+          var things =[g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12];
+          for (i = 0; i < 12; i++) {
                 var n = Math.floor(Math.random()*3);
+            //     var name = things[i];
                 document.getElementById("g1").value = g1[n];
                 document.getElementById("g2").value = g2[n];
                 document.getElementById("g3").value = g3[n];
@@ -144,7 +145,7 @@
         </div>
         <div id="go" class="row">
             <div id="goblock" class="medium-4 columns">
-                <button id="trigger" type="button" class="button alert round tiny" onclick="javascript:boom();">一鍵完成</button>
+                <button id="trigger" type="button" class="button alert round tiny" onclick="javascript:boom();return false">一鍵完成</button>
                 <input id="submit" type="submit" value="廢話連篇" class="button warning expand round"></input>
             </div>
             <div data-alert id="success" class="alert-box success radius  medium-4 columns" style="display:none;">
