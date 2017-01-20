@@ -19,13 +19,15 @@
     <script src="./foundation-5/js/foundation.min.js"></script>
     <script src="./foundation-5/js/vendor/modernizr.js"></script>
     <script src="./foundation-5/js/vendor/jquery.js"></script>
+    <script src="./foundation-5/js/foundation/foundation.alert.js"></script>
     <title>廢話產生器</title>
     <link <link href="main.css" rel="stylesheet" title="style">
     <script>
-        $(document).ready(function() {
-            $(document).foundation();
-        })
+    document.write('<script src=./foundation-5/js/vendor/'
+      + ('__proto__' in {} ? 'zepto' : 'jquery')
+      + '.js><\/script>');
     </script>
+
     <script type="text/javascript">
         function dawn() {
             var things = document.getElementsByTagName('input');
@@ -45,6 +47,38 @@
             document.getElementById("essay").style.display = "block";
             document.getElementById("success").style.display = "inline";
             return false;
+        }
+      </script>
+      <script>
+        function boom() {
+            var g1 = ["international", "可以上狂新聞", "海濤法師"];
+            var g2 = ["87賽亞人", "萌萌滴魯夫", "一拳抄人"];
+            var g3 = ["川普", "黑暗小英", "普丁"];
+            var g4 = ["拉低全台灣男生平均", "", "智障"];
+            var g5 = ["魯魯der", "素肚王子", "妖受讚"];
+            var g6 = ["聞腳趾", "舔鼻屎", "摳肚臍"];
+            var g7 = ["棒賽", "跳佛舞", "尻尻"];
+            var g8 = ["鼻毛", "腳毛", "尾骨"];
+            var g9 = ["睡覺", "吃", "耍廢"];
+            var g10 = ["尻子玉", "藍尾", "gg惹"];
+            var g11 = ["披特・宿", "晨曦", "史丹佛的 Paul"];
+            var g12 = ["連續三天沒便秘", "背出一百句靜思語", "連續睡 30 小時"];
+            for (i = 1; i < 13; i++) {
+                // var name = g + i
+                var n = Math.floor(Math.random()*3);
+                document.getElementById("g1").value = g1[n];
+                document.getElementById("g2").value = g2[n];
+                document.getElementById("g3").value = g3[n];
+                document.getElementById("g4").value = g4[n];
+                document.getElementById("g5").value = g5[n];
+                document.getElementById("g6").value = g6[n];
+                document.getElementById("g7").value = g7[n];
+                document.getElementById("g8").value = g8[n];
+                document.getElementById("g9").value = g9[n];
+                document.getElementById("g10").value = g10[n];
+                document.getElementById("g11").value = g11[n];
+                document.getElementById("g12").value = g12[n];
+            }
         }
     </script>
 </head>
@@ -77,9 +111,9 @@
                         <h3 class="fi-like" id="good_title"> Good Stuff </h3>
                     </li>
                     <br/>
-                    <li class="ask">形容很厲害 </br>ex.International<input name="world" value=""></input><br /></li>
-                    <li class="ask">很強的動漫角色 </br>ex.萌騎低魯夫<input name="dragon" value=""></input><br /></li>
-                    <li class="ask">很狂的真實人物 </br>ex.川普<input name="person" value=""></input><br /></li>
+                    <li class="ask">形容很厲害 </br>ex.International<input id="g1" name="world" value=""></input><br /></li>
+                    <li class="ask">很強的動漫角色 </br>ex.萌騎低魯夫<input id="g2" name="dragon" value=""></input><br /></li>
+                    <li class="ask">很狂的真實人物 </br>ex.川普<input id="g3" name="person" value=""></input><br /></li>
                 </ul>
             </div>
             <div id="bad things" class="medium-4 columns large-4 medium-6 small-12 columns">
@@ -88,11 +122,11 @@
                         <h3 class="fi-skull" id="bad_title"> Bad Stuff </h3>
                     </li>
                     <br/>
-                    <li class="ask">比喻很討厭或反諷 </br>ex.萌萌噠<input name="hate" value=""></input><br /></li>
-                    <li class="ask">形容很廢 </br>ex.魯魯der<input name="awful" value=""></input><br /></li>
-                    <li class="ask">講句很蠢的事 </br>ex.摳腳垢<input name="stupid" value=""></input><br /></li>
-                    <li class="ask">有點髒或白痴的動作 </br>ex.棒賽<input name="fxck" value=""></input><br /></li>
-                    <li class="ask">雞肋的部位 </br>ex.鼻毛<input name="organ" value=""></input><br /></li>
+                    <li class="ask">比喻很討厭或反諷 </br>ex.萌萌噠<input id="g4" name="hate" value=""></input><br /></li>
+                    <li class="ask">形容很廢 </br>ex.魯魯der<input id="g5" name="awful" value=""></input><br /></li>
+                    <li class="ask">講句很蠢的事 </br>ex.摳腳垢<input id="g6" name="stupid" value=""></input><br /></li>
+                    <li class="ask">有點髒或白痴的動作 </br>ex.棒賽<input id="g7" name="fxck" value=""></input><br /></li>
+                    <li class="ask">雞肋的部位 </br>ex.鼻毛<input id="g8" name="organ" value=""></input><br /></li>
                 </ul>
             </div>
             <div id="cool things" class="medium-4 columns large-4 medium-6 small-12 columns">
@@ -101,20 +135,21 @@
                         <h3 class="fi-trophy" id="cool_title"> Cool Stuff </h3>
                     </li>
                     <br/>
-                    <li class="ask">講個做了會很開心的事</br>ex.睡覺<input name="happy" value=""></input><br /></li>
-                    <li class="ask">很重要的部位或人 </br>ex.富爸爸<input name="vital" value=""></input><br /></li>
-                    <li class="ask">講一位最好的朋友 </br>ex.披特・宿<input name="quote" value=""></input><br /></li>
-                    <li class="ask">講句完成後會很屌的事 </br>ex.耍廢<input name="win" value=""></input><br/></li>
+                    <li class="ask">講個做了會很開心的事</br>ex.睡覺<input id="g9" name="happy" value=""></input><br /></li>
+                    <li class="ask">很重要的部位或人 </br>ex.富爸爸<input id="g10" name="vital" value=""></input><br /></li>
+                    <li class="ask">講一位最好的朋友 </br>ex.披特・宿<input id="g11" name="quote" value=""></input><br /></li>
+                    <li class="ask">講句完成後會很屌的事 </br>ex.耍廢<input id="g12" name="win" value=""></input><br/></li>
                 </ul>
             </div>
         </div>
         <div id="go" class="row">
             <div id="goblock" class="medium-4 columns">
+                <button id="trigger" type="button" class="button alert round tiny" onclick="javascript:boom();">一鍵完成</button>
                 <input id="submit" type="submit" value="廢話連篇" class="button warning expand round"></input>
             </div>
-            <div data-alert id="success" class="alert-box success radius medium-4 columns" style="display:none;">
+            <div data-alert id="success" class="alert-box success radius  medium-4 columns" style="display:none;">
                 <strong>成功了！</strong> 整個地球因為你，又產生了一句廢話。真是可喜可賀，認同請廣傳。
-                <a href="#" class="close">&times;</a>
+                <a class="close">&times;</a>
             </div>
         </div>
     </form>
@@ -134,14 +169,21 @@
           </button>
     </div>
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1582988938686904";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1582988938686904";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        })
+    </script>
 </body>
 
 </html>
