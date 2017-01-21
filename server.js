@@ -41,16 +41,11 @@ app.post("/form", function(req, res) {
     res.redirect("/");
 });
 
-// 關於
-app.get("/about", function(req, res) {
+
+app.get("/googlea24fbd46797b33f4", function(req, res) {
     // res.type("text/plain");
     // res.send("about me");
-    res.render("about");
-});
-
-// 照片
-app.get("/photo", function(req, res) {
-    res.render("photo");
+    res.render("googlea24fbd46797b33f4");
 });
 
 // 找不到頁面
