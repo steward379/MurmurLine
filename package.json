@@ -1,0 +1,29 @@
+{
+  "name": "steward",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "server02.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steward379/node_book.git"
+  },
+  "keywords": [
+    "express",
+    "practice"
+  ],
+  "author": "steward tsou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steward379/node_book/issues"
+  },
+  "homepage": "https://github.com/steward379/node_book#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0"
+  }
+}
