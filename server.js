@@ -45,7 +45,7 @@ app.post("/form", function(req, res) {
 app.get("/googlea24fbd46797b33f4", function(req, res) {
     // res.type("text/plain");
     // res.send("about me");
-    res.render("googlea24fbd46797b33f4");
+    res.render("googlea24fbd46797b33f4.html");
 });
 
 // 找不到頁面
