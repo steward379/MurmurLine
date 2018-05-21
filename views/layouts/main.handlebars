@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:url" content="https://murmurline-generate.herokuapp.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="廢話產生器" />
+    <meta property="og:title" content="直銷頭銜產生器" />
     <meta property="og:description" content="國際廢話線鉅獻。部分源碼來自「萌萌產生器」" />
     <meta property="og:image" content="https://murmurline-generate.herokuapp.com/trash.jpg" />
     <!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css"> -->
@@ -66,19 +66,21 @@
             var things = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12];
             for (i = 0; i < 12; i++) {
                 var n = Math.floor(Math.random() * 3);
+		var m = Math.floor(Math.random() * 3);
+		var g = Math.floor(Math.random() * 3);
                 //     var name = things[i];
                 document.getElementById("g1").value = g1[n];
-                document.getElementById("g2").value = g2[n];
-                document.getElementById("g3").value = g3[n];
+                document.getElementById("g2").value = g2[m];
+                document.getElementById("g3").value = g3[g];
                 document.getElementById("g4").value = g4[n];
-                document.getElementById("g5").value = g5[n];
-                document.getElementById("g6").value = g6[n];
+                document.getElementById("g5").value = g5[m];
+                document.getElementById("g6").value = g6[g];
                 document.getElementById("g7").value = g7[n];
-                document.getElementById("g8").value = g8[n];
-                document.getElementById("g9").value = g9[n];
+                document.getElementById("g8").value = g8[m];
+                document.getElementById("g9").value = g9[g];
                 document.getElementById("g10").value = g10[n];
-                document.getElementById("g11").value = g11[n];
-                document.getElementById("g12").value = g12[n];
+                document.getElementById("g11").value = g11[m];
+                document.getElementById("g12").value = g12[g];
             }
         }
     </script>
